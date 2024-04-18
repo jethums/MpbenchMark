@@ -1,0 +1,8 @@
+Projeto privado
+
+#install gcc-12
+sudo apt install gcc-12
+#install clang and libomp-dev
+sudo apt-get install clang libomp-dev
+#install openjdk
+sudo apt install openjdk-17-jdk-headless
