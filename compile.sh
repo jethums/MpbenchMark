@@ -1,4 +1,23 @@
 #--------------------------------------#
+echo "ADA"
+sleep 2
+#--------------------------------------#
+
+cd AdaBenchMark/Ada1/
+sh compile.sh
+
+cd ..
+cd Ada2/
+sh compile.sh
+
+cd ..
+cd Ada4/
+sh compile.sh
+
+cd ..
+cd ..
+
+#--------------------------------------#
 echo "CBUnroll"
 sleep 2
 #--------------------------------------#
@@ -14,9 +33,6 @@ cd ..
 cd C4Thread/
 sh compile.sh
 
-cd ..
-cd C8Thread/
-sh compile.sh
 
 cd ..
 cd ..
@@ -37,9 +53,6 @@ cd ..
 cd JB4Thread
 sh compile.sh
 
-cd ..
-cd JB8Thread
-sh compile.sh
 
 cd ..
 cd ..
@@ -59,9 +72,22 @@ cd ..
 cd JF4Thread
 sh compile.sh
 
-cd ..
-cd JF8Thread
-sh compile.sh
 
 cd ..
 cd ..
+
+#--------------------------------------#
+echo "CSharp"
+sleep 2
+#--------------------------------------#
+cd CSharpBenchmark/CSharp1
+sh compile.sh
+
+cd ..
+cd CSharp2
+sh compile.sh
+
+cd ..
+cd CSharp4
+sh compile.sh
+

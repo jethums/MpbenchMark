@@ -1,0 +1,45 @@
+package Default_Constant is
+	-- global constant variables
+	--tref : constant Long_Float := 459.6;
+	g0 : constant Long_Float := 32.2;
+	gama : constant Long_Float := 1.4; 
+	tt4 : constant Long_Float :=2500.0;
+	tt7 : constant Long_Float :=2500.0;
+	p3p2d : constant Long_Float := 8.0;
+	p3fp2d : constant Long_Float := 2.0;
+	byprat : constant Long_Float := 1.0;
+	--abflag : constant Long_Float := 0.0;
+	fhv : constant Long_Float := 18600.0;
+	--a2 : constant Long_Float := 2.0;
+	acore : constant Long_Float := 2.0;
+	--acap : constant Long_Float := 0.9 * a2;
+	--arsched : constant Long_Float := 0.0;
+	afan : constant Long_Float := 2.0;
+	--u0min : constant Long_Float := 0.0;
+	--u0max : constant Long_Float := 1500.0;
+	--altmin : constant Long_Float := 0.0;
+	--altmax : constant Long_Float := 60000.0;
+	--thrmin : constant Long_Float := 30.0;
+	--thrmax : constant Long_Float := 100.0;
+	--etmin : constant Long_Float := 0.5;
+	--etmax : constant Long_Float := 1.0;
+	--cprmin : constant Long_Float := 1.0;
+	--cprmax : constant Long_Float := 50.0;
+	--bypmin : constant Long_Float := 0.0;
+	--bypmax : constant Long_Float := 10.0;
+	--fprmin : constant Long_Float := 1.0;
+	--fprmax : constant Long_Float := 2.0;
+	--t4min : constant Long_Float := 1000.0;
+	--t4max : constant Long_Float := 3200.0;
+	--t7min : constant Long_Float := 1000.0;
+	--t7max : constant Long_Float := 4000.0;
+	--pmax : constant Long_Float := 20.0;
+	--tmin : constant Long_Float := -100.0 + tref;
+	--tmax : constant Long_Float := 100.0 + tref;
+	dfan : constant Long_Float := 293.02;
+	dcomp : constant Long_Float := 293.02;
+	dburner : constant Long_Float := 515.2;
+	dturbin : constant Long_Float := 515.2;
+	dnozl : constant Long_Float := 515.2;
+
+end Default_Constant;

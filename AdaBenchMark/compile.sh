@@ -1,5 +1,5 @@
 rm -f *.o
 rm -f *.ali
-gnatmake -O2 -funroll-loops -mcpu=cortex-a53 mpbenchmark.adb
+gnatmake -O2 -funroll-loops mpbenchmark.adb
 rm -f *.o
 rm -f *.ali

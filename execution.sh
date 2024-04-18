@@ -2,37 +2,39 @@
 echo "ADA"
 sleep 2
 #--------------------------------------#
-cd AdaBenchMark
+cd AdaBenchMark/Ada1/
 
 count=1
 #echo 0 > /sys/class/gpio/gpio538/value
 while [ $count -le 13 ]; do
-    taskset -c 0 ./mpbenchmark1
+    taskset -c 0 ./mpbenchmark
     count=$((count + 1))
 done
 #echo 1 > /sys/class/gpio/gpio538/value
 #sleep 5
-
+cd ..
+cd Ada2/
 
 count=1
 #echo 0 > /sys/class/gpio/gpio538/value
 while [ $count -le 13 ]; do
-    taskset -c 0,2 ./mpbenchmark2
+    taskset -c 0,2 ./mpbenchmark
     count=$((count + 1))
 done
 #echo 1 > /sys/class/gpio/gpio538/value
 #sleep 5
-
+cd ..
+cd Ada4/
 count=1
 #echo 0 > /sys/class/gpio/gpio538/value
 while [ $count -le 13 ]; do
-    taskset -c 0,1,2,3 ./mpbenchmark4
+    taskset -c 0,1,2,3 ./mpbenchmark
     count=$((count + 1))
 done
 #echo 1 > /sys/class/gpio/gpio538/value
 
 cd ..
-
+cd ..
 #--------------------------------------#
 echo "CBUnroll"
 sleep 2
@@ -175,33 +177,38 @@ cd ..
 echo "CSharp"
 sleep 2
 #--------------------------------------#
-cd CSharpBenchmark
+cd CSharpBenchmark/CSharp1
 count=1
 #echo 0 > /sys/class/gpio/gpio538/value
 while [ $count -le 13 ]; do
-    taskset -c 0 mono mpbenchmark1.exe
+    taskset -c 0 mono mpbenchmark.exe
     count=$((count + 1))
 done
 #echo 1 > /sys/class/gpio/gpio538/value
 
 #sleep 5
-
+cd ..
+cd CSharp2
 #-------------------------------------
 count=1
 #echo 0 > /sys/class/gpio/gpio538/value
 while [ $count -le 13 ]; do
-    taskset -c 0,2 mono mpbenchmark2.exe
+    taskset -c 0,2 mono mpbenchmark.exe
     count=$((count + 1))
 done
 #echo 1 > /sys/class/gpio/gpio538/value
 
 #sleep 5
-
+cd ..
+cd CSharp4
 #---------------------------------------
 count=1
 #echo 0 > /sys/class/gpio/gpio538/value
 while [ $count -le 13 ]; do
-    taskset -c 0,1,2,3 mono mpbenchmark4.exe
+    taskset -c 0,1,2,3 mono mpbenchmark.exe
     count=$((count + 1))
 done
 #echo 1 > /sys/class/gpio/gpio538/value
+cd ..
+cd ..
+

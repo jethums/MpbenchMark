@@ -1,2 +1,3 @@
 rm -f mpbenchmark
-gcc -O2 -funroll-loops -mcpu=cortex-a53 -fopenmp -o mpbenchmark mpbenchmark.c
+gcc -O2 -funroll-loops -march=native -fopenmp -o mpbenchmark mpbenchmark.c
+#-mcpu=cortex-a53
