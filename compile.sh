@@ -1,27 +1,3 @@
-
-# #--------------------------------------#
-# echo "C"
-# sleep 2
-# #--------------------------------------#
-
-# cd CBenchMark/C1Thread/
-# sh compile.sh
-
-# cd ..
-# cd C2Thread/
-# sh compile.sh
-
-# cd ..
-# cd C4Thread/
-# sh compile.sh
-
-# cd ..
-# cd C8Thread/
-# sh compile.sh
-
-# cd ..
-# cd ..
-
 #--------------------------------------#
 echo "CBUnroll"
 sleep 2
@@ -45,75 +21,6 @@ sh compile.sh
 cd ..
 cd ..
 
-
-# #--------------------------------------#
-# echo "CFloat"
-# sleep 2
-# #--------------------------------------#
-
-# cd CBenchMark_Float/C1Thread/
-# sh compile.sh
-
-# cd ..
-# cd C2Thread/
-# sh compile.sh
-
-# cd ..
-# cd C4Thread/
-# sh compile.sh
-
-# cd ..
-# cd C8Thread/
-# sh compile.sh
-
-# cd ..
-# cd ..
-
-#--------------------------------------#
-echo "C_SIMD_DP"
-sleep 2
-#--------------------------------------#
-
-cd CBenchMark_SIMD_DP/C1Thread/
-sh compile.sh
-
-cd ..
-cd C2Thread/
-sh compile.sh
-
-cd ..
-cd C4Thread/
-sh compile.sh
-
-cd ..
-cd C8Thread/
-sh compile.sh
-
-cd ..
-cd ..
-
-#--------------------------------------#
-echo "C_SIMD_SP"
-sleep 2
-#--------------------------------------#
-
-cd CBenchMark_SIMD_SP/C1Thread/
-sh compile.sh
-
-cd ..
-cd C2Thread/
-sh compile.sh
-
-cd ..
-cd C4Thread/
-sh compile.sh
-
-cd ..
-cd C8Thread/
-sh compile.sh
-
-cd ..
-cd ..
 #--------------------------------------#
 echo "Java"
 sleep 2
